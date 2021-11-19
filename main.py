@@ -3,13 +3,13 @@ from pytgcalls import idle
 from driver.veez import call_py, bot
 
 async def mulai_bot():
-    print("[VEEZ]: STARTING BOT CLIENT")
+    print("[ROYALS]: STARTING BOT CLIENT")
     await bot.start()
-    print("[VEEZ]: STARTING PYTGCALLS CLIENT")
+    print("[ROYALS]: STARTING PYTGCALLS CLIENT")
     await call_py.start()
     await idle()
     await pidle()
-    print("[VEEZ]: STOPPING BOT & USERBOT")
+    print("[ROYALS]: STOPPING BOT & USERBOT")
     await bot.stop()
 
 loop = asyncio.get_event_loop()

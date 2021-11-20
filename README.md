@@ -1,5 +1,8 @@
 # Royals-Music
 Royal Music You can play music and video at a time in vc 
+<p align="center">
+  <img src="https://te.legra.ph/file/d8df20401bf453a34be0b.jpg">
+</p>
 
 
 

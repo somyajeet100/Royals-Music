@@ -1,6 +1,6 @@
 import asyncio
 from pytgcalls import idle
-from driver.veez import call_py, bot
+from Royalscall.Royals import call_py, bot
 
 async def mulai_bot():
     print("[ROYALS]: STARTING BOT CLIENT")

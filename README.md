@@ -16,7 +16,8 @@ Royal Music You can play music and video at a time in vc
 
 # Deployment 🎖
 
-### Soon
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/somyajeet100/Royals-Music)
+
 
 ## Support & Updates 🌷
 

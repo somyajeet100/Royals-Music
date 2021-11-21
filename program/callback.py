@@ -53,7 +53,7 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" 🚩 **Basic Guide for using this bot:**
+        f"""❓ **Basic Guide for using this bot:**
 1.) **First, add me to your group.**
 2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
 3.) **After promoting me, type /reload in group to refresh the admin data.**

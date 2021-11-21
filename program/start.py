@@ -50,8 +50,8 @@ async def _human_time_duration(seconds):
 @Client.on_message(
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
-async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(
+async def start_(client: Client, message: Message):
+    await message.reply_text(
       f"""🔥 **Welcome !! How are uh dear [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
       ‼️ **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's VC !! 😎🤘🏻**
       

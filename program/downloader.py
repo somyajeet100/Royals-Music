@@ -1,4 +1,3 @@
-# Copyright (C) 2021 By Veez Music-Project
 
 from __future__ import unicode_literals
 

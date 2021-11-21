@@ -7,8 +7,7 @@ Royal Music You can play music and video at a time in vc
 
 
 # Commands 
-
-### Soon
+`SOON`
 
 # String
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-redblack)](https://replit.com/@SomyajeetMishra/TeamDltvideo#main.py) `STRING_SESSION`
@@ -17,6 +16,17 @@ Royal Music You can play music and video at a time in vc
 # Deployment 🎖
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/somyajeet100/Royals-Music)
+
+
+
+
+
+
+
+# Credits 
+- [• 🇸ᴏᴍʏᴀ⃝🇯ᴇᴇᴛ • 🇴ғғɪᴄɪᴀʟ • 🖤](t.me/Somyajeet_Mishra)
+- [- ❛𝗥𝗼𝗺𝗲𝗼 [🇮🇳] 𝘅𝗗 ⁪⁬⁮⁮⁮⁮ ‌‌‌‌](t.me/its_romeoo)
+
 
 
 ## Support & Updates 🌷

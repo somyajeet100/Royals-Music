@@ -9,10 +9,12 @@ from config import (
     OWNER_NAME,
     UPDATES_CHANNEL,
 )
+
+
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-      f"""🔥 **Welcome !! How are uh dear [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+        f"""🔥 **Welcome !! How are uh dear [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
       ‼️ **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's VC !! 😎🤘🏻**
       
       
@@ -46,7 +48,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
             ]
         ),
-            disable_web_page_preview=True,
+        disable_web_page_preview=True,
     )
 
 
@@ -64,7 +66,7 @@ async def cbguides(_, query: CallbackQuery):
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("👈🏼 Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
     )
 
@@ -78,12 +80,12 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🤟🏻 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("🤟🏻 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("🤟🏻 Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("👈🏼 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
                 ],
             ]
         ),
@@ -108,7 +110,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /alive - show the bot alive info (in group)
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("👈🏼 Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -116,7 +118,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🤟🏻 here is the admin commands:
+        f"""🏮 here is the admin commands:
 » /pause - pause the stream
 » /resume - resume the stream
 » /skip - switch to next stream
@@ -129,14 +131,14 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotleave - order userbot to leave from group
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("👈🏼 Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🤟🏻 here is the sudo commands:
+        f"""🏮 here is the sudo commands:
 » /rmw - clean all raw files
 » /rmd - clean all downloaded files
 » /sysinfo - show the system information
@@ -145,7 +147,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /leaveall - order userbot to leave from all group
 ⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("👈🏼 Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -184,6 +186,3 @@ async def close(_, query: CallbackQuery):
     if not a.can_manage_voice_chats:
         return await query.answer("💡 only admin with manage voice chats permission that can tap this button !", show_alert=True)
     await query.message.delete()
-© 2021 GitHub, Inc.
-Terms
-Privacy

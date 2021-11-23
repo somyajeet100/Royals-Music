@@ -42,7 +42,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔺 Source Code", url="https://github.com/somyajeet100/Royals-Music"
+                        "📀  Source Code", url="https://github.com/somyajeet100/Royals-Music"
                     )
                 ],
             ]
